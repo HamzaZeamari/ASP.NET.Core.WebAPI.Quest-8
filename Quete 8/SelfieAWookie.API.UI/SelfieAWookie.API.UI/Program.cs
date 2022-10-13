@@ -4,6 +4,7 @@ using SelfieAWookie.Core.Selfies.Domain;
 using SelfieAWookie.Core.Selfies.Infrastructures.Data;
 using SelfieAWookie.Core.Selfies.Infrastructures.Repositories;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<SelfieContext>(options =>
 });
 
 builder.Services.AddInjections();
+builder.Services.AddCustomSecurity();
 
 var app = builder.Build();
 
@@ -29,6 +31,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(SecurityMethods.DEFAULT_POLICY);
 
 app.UseAuthorization();
 

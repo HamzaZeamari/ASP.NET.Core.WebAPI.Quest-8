@@ -9,7 +9,6 @@ namespace SelfieAWookieTest
 {
     public class SelfieControllerUnitTest
     {
-
        
         [Fact]
         public void ShouldAddOneSelfie()
@@ -19,10 +18,10 @@ namespace SelfieAWookieTest
             var controller = new SelfieController(repositoryMock.Object);
             var unit = new Mock<IUnitOfWork>();
             repositoryMock.Setup(item => item.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
-            repositoryMock.Setup(item => item.AddOne(It.IsAny<Selfie>())).Returns(new Selfie() { Id = 4 }); 
+            repositoryMock.Setup(item => item.AddOne(It.IsAny<Selfie>())).Returns(new Selfie() { Id = 4 });
             var result = controller.AddOne(slf);
 
-            Assert.NotNull(result); 
+            Assert.NotNull(result);
             Assert.IsType<OkObjectResult>(result);
 
             var addedSelfie = (result as OkObjectResult).Value as SelfieDTO;
@@ -63,7 +62,7 @@ namespace SelfieAWookieTest
 
             List<SelfieResumeDTO> list = okResult.Value as List<SelfieResumeDTO>;
             Assert.True(list.Count == expectedList.Count);
-            
+
         }
     }
 }
