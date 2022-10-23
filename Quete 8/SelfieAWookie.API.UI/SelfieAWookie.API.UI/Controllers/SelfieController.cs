@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SelfieAWookie.API.UI.Application.DTOs;
+using SelfieAWookie.API.UI.ExtensionMethods;
 using SelfieAWookie.Core.Selfies.Domain;
 using SelfieAWookie.Core.Selfies.Infrastructures.Data;
 
@@ -9,6 +11,7 @@ namespace SelfieAWookie.API.UI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors(SecurityMethods.DEFAULT_POLICY)]    
     public class SelfieController : ControllerBase
     {
         private readonly ISelfieRepository repository = null;

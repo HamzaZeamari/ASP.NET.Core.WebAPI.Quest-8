@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfieAWookie.Core.Selfies.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfieAWookie.Core.Selfies.Infrastructures", "SelfieAWookie.Core.Selfies.Infrastructure\SelfieAWookie.Core.Selfies.Infrastructures.csproj", "{43F80D03-3B77-4CC4-A8B1-899BE26A7A1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfiesAWookies.Core.Framework", "SelfiesAWookies.Core.Framework\SelfiesAWookies.Core.Framework.csproj", "{EA950D73-5041-4429-942E-89E3969D5956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfiesAWookies.Core.Framework", "SelfiesAWookies.Core.Framework\SelfiesAWookies.Core.Framework.csproj", "{EA950D73-5041-4429-942E-89E3969D5956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfieAWookie.Core.Selfies.Migration", "SelfieAWookie.Core.Selfies.Migration\SelfieAWookie.Core.Selfies.Migration.csproj", "{60F42935-1E78-4017-8513-CDF86901BD5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{EA950D73-5041-4429-942E-89E3969D5956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA950D73-5041-4429-942E-89E3969D5956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA950D73-5041-4429-942E-89E3969D5956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F42935-1E78-4017-8513-CDF86901BD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F42935-1E78-4017-8513-CDF86901BD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F42935-1E78-4017-8513-CDF86901BD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F42935-1E78-4017-8513-CDF86901BD5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{B68E79D3-8F24-45FC-8F38-95BBA6DE1A84} = {1238EF1F-64B5-4D9D-9F12-37FB184947B3}
 		{43F80D03-3B77-4CC4-A8B1-899BE26A7A1C} = {1238EF1F-64B5-4D9D-9F12-37FB184947B3}
 		{EA950D73-5041-4429-942E-89E3969D5956} = {1238EF1F-64B5-4D9D-9F12-37FB184947B3}
+		{60F42935-1E78-4017-8513-CDF86901BD5C} = {1238EF1F-64B5-4D9D-9F12-37FB184947B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7B4F9DD-C488-401D-8298-3C9BE6509B3F}
